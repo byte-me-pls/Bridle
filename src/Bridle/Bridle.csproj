@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- WinExe: arayüz açılırken ayrıca bir konsol penceresi çıkmasın.
+         Yönlendirilmiş stdin/stdout (host kipi, selftest) yine çalışır. -->
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <AssemblyName>Bridle</AssemblyName>
+    <RootNamespace>Bridle</RootNamespace>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Avalonia" Version="11.*" />
+    <PackageReference Include="Avalonia.Desktop" Version="11.*" />
+    <PackageReference Include="Avalonia.Themes.Fluent" Version="11.*" />
+    <!-- Yalnızca render kipi için: pencereyi ekrana çıkarmadan PNG'ye çizer. -->
+    <PackageReference Include="Avalonia.Headless" Version="11.*" />
+  </ItemGroup>
+
+</Project>

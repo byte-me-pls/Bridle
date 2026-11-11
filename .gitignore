@@ -1,0 +1,7 @@
+bin/
+obj/
+.vs/
+
+# Karşılaştırma için saklanan derlemeler yerel kalır.
+versions/*.dll
+versions/*.so
