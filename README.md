@@ -4,8 +4,10 @@ Horseman için lab uygulaması: HSL kodunu komut satırı olmadan dener, Horsema
 
 ## Çalıştırma
 
+`run.cmd` dosyasına çift tıklayın, ya da bir komut satırından:
+
 ```
-run.cmd
+.\run.cmd
 ```
 
 .NET 10 SDK gerekir. İlk derlemede Avalonia paketleri NuGet'ten indirilir.
